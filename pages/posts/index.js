@@ -1,4 +1,5 @@
 import { getPostData } from '@/lib/posts';
+import Head from 'next/head';
 import Link from 'next/link';
 
 export async function getStaticProps() {
@@ -13,6 +14,9 @@ export async function getStaticProps() {
 export default function Posts({ allPostsData }) {
   return (
     <div className="container">
+      <Head>
+        <title>Blog</title>
+      </Head>
       <h1 className="page-title">This is my blog</h1>
       {allPostsData.map(({ slug, metadata }) => (
         <div key={slug}>
