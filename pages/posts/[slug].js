@@ -15,9 +15,9 @@ export default function Post({ postData }) {
         <title>{postData.metadata.title}</title>
       </Head>
       <article className="">
-        <h1>{postData.metadata.title}</h1>
         <MDXRemote {...postData.content} />
       </article>
+      <br />
       <Link className="link-text" href="/posts">Back &laquo;</Link>
     </div>
   );
