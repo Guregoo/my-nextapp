@@ -1,12 +1,7 @@
 import Link from 'next/link';
 import { getAllPostSlugs, getPostDataBySlug } from '../../lib/posts';
 import { MDXRemote } from 'next-mdx-remote';
-import Image from 'next/image';
 import Head from 'next/head';
-
-const components = {
-  Image
-}
 
 export default function Post({ postData }) {
   return (
@@ -14,11 +9,11 @@ export default function Post({ postData }) {
       <Head>
         <title>{postData.metadata.title}</title>
       </Head>
-      <article className="">
+      <article>
         <MDXRemote {...postData.content} />
       </article>
       <br />
-      <Link className="link-text" href="/posts">Back &laquo;</Link>
+      <Link className="text-md underline hover:text-blue-300" href="/posts">Back &laquo;</Link>
     </div>
   );
 }
