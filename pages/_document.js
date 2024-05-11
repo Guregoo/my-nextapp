@@ -16,7 +16,7 @@ export default function Document() {
           <main className="min-h-screen">
             <Main/>
           </main>
-          <footer className="p-4  bottom-0 text-slate-50 bg-slate-600">
+          <footer className="p-4 bottom-0 text-slate-50 bg-slate-600">
             <Footer />
           </footer>
           </div>
