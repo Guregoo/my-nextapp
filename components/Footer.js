@@ -4,7 +4,7 @@ import { FaFacebook, FaGithub, FaInstagram, FaYoutube } from "react-icons/fa";
 export default function Footer() {
   const year = new Date().getFullYear()
   return(
-    <div className="p-10 flex select-none flex-col overflow-hidden gap-2 justify-center items-center text-teal-50 bg-slate-600 bg-lg:text-left">
+    <div className="flex flex-col gap-2 mx-auto text-center">
       <div>
       &copy;Copyright {year} Gregorious Jovi
       </div>

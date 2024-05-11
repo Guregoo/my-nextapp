@@ -8,16 +8,18 @@ export default function Document() {
       <Head>
         <link rel="icon" href="favicon.ico" type="image/x-icon" />
       </Head>
-      <body className="" >
-        <header className="sticky top-0">
-          <Navbar/>
-        </header>
-        <main className="">
-          <Main/>
-        </main>
-        <footer className="relative bottom-0">
-          <Footer />
-        </footer>
+      <body>
+        <div className="">
+          <navbar className="sticky top-0">
+            <Navbar/>
+          </navbar>
+          <main className="min-h-screen">
+            <Main/>
+          </main>
+          <footer className="p-4  bottom-0 text-slate-50 bg-slate-600">
+            <Footer />
+          </footer>
+          </div>
         <NextScript />
       </body>
     </Html>
