@@ -1,19 +1,10 @@
-import Link from 'next/link';
+import PostArticle from '@/components/PostArticle';
 import { getAllPostSlugs, getPostDataBySlug } from '../../lib/posts';
-import { MDXRemote } from 'next-mdx-remote';
-import Head from 'next/head';
 
 export default function Post({ postData }) {
   return (
-    <div className="container">
-      <Head>
-        <title>{postData.metadata.title}</title>
-      </Head>
-      <article>
-        <MDXRemote {...postData.content} />
-      </article>
-      <br />
-      <Link className="text-md underline hover:text-blue-300" href="/posts">Back &laquo;</Link>
+    <div>
+      <PostArticle postData={postData}/>
     </div>
   );
 }
