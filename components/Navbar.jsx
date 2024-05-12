@@ -15,11 +15,10 @@ export default function Navbar(){
         />
         </Link>
       </div>
-      <div className="flex justify-center items-center gap-5 p-4">
+      <div className="flex justify-center items-center gap-5 p-4 font-semibold text-lg">
         <Link className="text-slate-50 hover:underline" href="/">Home</Link>
         <Link className="text-slate-50 hover:underline" href="/about">About</Link>
-        <Link className="text-slate-50 hover:underline" href="/contact">Contact</Link>
-        <Link className="text-slate-50 hover:underline" href="/posts">Blog</Link>
+        <Link className="text-slate-50 hover:underline" href="/posts">Projects</Link>
       </div>
     </div>
   )

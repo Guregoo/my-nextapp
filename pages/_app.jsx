@@ -1,6 +1,7 @@
 import "@/styles/globals.css";
 import { Poppins } from "next/font/google";
-import { Analytics } from "@vercel/analytics/react"
+import { Analytics } from "@vercel/analytics/react";
+import { ThemeProvider } from "next-themes";
 
 const poppins = Poppins({
   subsets: ['latin'],
@@ -11,9 +12,9 @@ const poppins = Poppins({
 
 export default function App({ Component, pageProps }) {
   return(
-    <main className={`${poppins.className} px-6 py-4`}>
-      <Component {...pageProps} />
-      <Analytics />
-    </main>
+      <div className={`${poppins.className} px-6 py-4`}>
+        <Component {...pageProps} />
+        <Analytics />
+      </div>
   ) 
 }

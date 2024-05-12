@@ -15,9 +15,9 @@ export default function Posts({ allPostsData }) {
   return (
     <div>
       <Head>
-        <title>Blog</title>
+        <title>Projects</title>
       </Head>
-      <h1 className=''>My Posts</h1>
+      <p className='text-3xl font-bold py-8'>Check All My Projects Here</p>
       <PostsCard postData={allPostsData} />
     </div>
   );
